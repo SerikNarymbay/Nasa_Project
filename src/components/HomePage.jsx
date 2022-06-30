@@ -6,6 +6,7 @@ const HomePage = () => {
     <div>
       <NavLink to="/photo">Photo of the day</NavLink>
       <NavLink to="/image">Images</NavLink>
+      <NavLink to ='/video'>Videos</NavLink>
     </div>
   );
 };

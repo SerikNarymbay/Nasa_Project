@@ -3,6 +3,7 @@ import "./App.css";
 import HomePage from "./components/HomePage";
 import { NasaImage } from "./components/NasaImage";
 import NasaPhoto from "./components/NasaPhoto";
+import { NasaVideo } from "./components/NasaVideo";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route element={<HomePage/>} path="/" />
           <Route element={<NasaPhoto/>} path="/photo" />
           <Route element={<NasaImage/>} path= '/image'/>
+          <Route element={<NasaVideo/>} path = '/video'/>
         </Routes>
       </BrowserRouter>
     </div>
