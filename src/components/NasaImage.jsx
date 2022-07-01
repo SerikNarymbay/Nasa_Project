@@ -15,7 +15,7 @@ export function NasaImage() {
   useEffect(() => {
     fetchImage({ page: page, q: debouncedSearch }).then((data) => {
       setPage(page);
-      setTotalPages(Math.ceil(data.collection.metadata.total_hits/100));
+      setTotalPages(Math.min(100, Math.ceil(data.collection.metadata.total_hits / 100)));
       setImage(data.collection.items);
     });
   }, [debouncedSearch, page]);

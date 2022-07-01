@@ -16,10 +16,11 @@ export function fetchImage({ page, q }) {
     .then((res) => res.data);
 }
 
-export function fetchVideo({ page = 1, q }) {
+export function fetchVideo() {
   return axios
     .get(`https://images-api.nasa.gov/search`, {
-      params: { page, media_type: "video", q },
+      params: { media_type: "video" },
     })
+
     .then((res) => res.data);
 }

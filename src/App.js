@@ -9,8 +9,9 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <HomePage/>
         <Routes>
-          <Route element={<HomePage/>} path="/" />
+          
           <Route element={<NasaPhoto/>} path="/photo" />
           <Route element={<NasaImage/>} path= '/image'/>
           <Route element={<NasaVideo/>} path = '/video'/>
