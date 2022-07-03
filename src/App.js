@@ -1,20 +1,22 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import HomePage from "./components/HomePage";
-import { NasaImage } from "./components/NasaImage";
-import NasaPhoto from "./components/NasaPhoto";
-import { NasaVideo } from "./components/NasaVideo";
+import Header from "./components/Header";
+
+import { HomePage } from "./Pages/HomePage";
+import NasaPhoto from "./Pages/NasaDailyPhoto";
+import { NasaVideo } from "./Pages/NasaVideo";
+import backGround from "./backgroundVideo/Earth_Background.mp4";
 
 function App() {
   return (
     <div className="App">
+      <video className="video_background" src={backGround} autoPlay loop />
       <BrowserRouter>
-      <HomePage/>
+        <Header />
         <Routes>
-          
-          <Route element={<NasaPhoto/>} path="/photo" />
-          <Route element={<NasaImage/>} path= '/image'/>
-          <Route element={<NasaVideo/>} path = '/video'/>
+          <Route element={<NasaPhoto />} path="/photo" />
+          <Route element={<HomePage />} path="/" />
+          <Route element={<NasaVideo />} path="/video" />
         </Routes>
       </BrowserRouter>
     </div>

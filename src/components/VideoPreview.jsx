@@ -11,7 +11,15 @@ export const VideoPreview = ({ video, open, setOpen }) => {
   }, [open, video]);
 
   return (
-    <div style={{ width: "100%", height: "100%" }}>
+    <div
+      style={{
+        width: "100%",
+        height: "100%",
+        backgroundColor: "#555555",
+        borderRadius: "6px",
+        padding: "5px",
+      }}
+    >
       {!open || !links[0] ? (
         <img
           onClick={() => setOpen(video.href)}
