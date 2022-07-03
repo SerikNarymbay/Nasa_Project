@@ -48,9 +48,9 @@ export function NasaVideo() {
         />
       </form>
       <Container>
-        <Grid container spacing={2}>
+        <Grid container rowSpacing={10} columnSpacing={{ xc: 1, sm: 2, md: 3 }}>
           {video.map((item) => (
-            <Grid item xs={8 / 3} key={item.href}>
+            <Grid item xs={12} sm={6} md={3} key={item.href}>
               <div
                 style={{
                   display: "flex",
