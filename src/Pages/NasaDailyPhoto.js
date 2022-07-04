@@ -36,7 +36,7 @@ export default function NasaPhoto() {
     <div>
       <div>
         <Button
-          style={{ margin: "40px", color: "white", backgroundColor: "blue" }}
+          style={{ marginLeft: "150px",marginTop:'40px', color: "white", backgroundColor: "blue" }}
           onClick={handleOpen}
         >
           Info about

@@ -61,7 +61,7 @@ export function HomePage() {
       <Container>
         <Grid container rowSpacing={10} columnSpacing={{ xc: 1, sm: 2, md: 3 }}>
           {image.map((item) => (
-            <Grid item xs={12} md={3}>
+            <Grid item xs={12} sm={6} md={3}>
               <div
                 style={{
                   display: "flex",

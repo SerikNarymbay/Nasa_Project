@@ -41,7 +41,7 @@ export function NasaVideo() {
           label="Search for a video"
           variant="outlined"
           focused
-          color="secondary"
+          color="primary"
           sx={{ m: 1, width: "55ch", input: { color: "white" } }}
           value={search}
           onChange={handleSearch}
@@ -50,7 +50,7 @@ export function NasaVideo() {
       <Container>
         <Grid container rowSpacing={10} columnSpacing={{ xc: 1, sm: 2, md: 3 }}>
           {video.map((item) => (
-            <Grid item xs={12} sm={6} md={3} key={item.href}>
+            <Grid item xs={12} sm={4} md={3} key={item.href}>
               <div
                 style={{
                   display: "flex",
@@ -91,7 +91,7 @@ export function NasaVideo() {
           }}
           variant="outlined"
           shape="rounded"
-          color="secondary"
+          color="primary"
         />
       </div>
     </div>
