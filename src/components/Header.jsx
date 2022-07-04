@@ -15,7 +15,12 @@ const Header = () => {
         }}
       >
         <NavLink to="/">
-          <img src={logo} alt="logoImage" style={{ width: "100px" }} />
+          <img
+            className="img"
+            src={logo}
+            alt="logoImage"
+            style={{ width: "100px" }}
+          />
         </NavLink>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <div style={{ margin: "20px" }}>
@@ -25,6 +30,7 @@ const Header = () => {
           </div>
           <div style={{ margin: "20px" }}>
             <NavLink
+              className="photo"
               style={{ textDecoration: "none", color: "white" }}
               to="/photo"
             >

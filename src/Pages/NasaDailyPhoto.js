@@ -38,12 +38,12 @@ export default function NasaPhoto() {
       <div>
         <Button
           style={{
-            marginLeft: "150px",
             marginTop: "40px",
             color: "white",
             backgroundColor: "blue",
           }}
           onClick={handleOpen}
+          className="btn"
         >
           Info about
         </Button>
@@ -84,9 +84,10 @@ export default function NasaPhoto() {
               objectPosition: "center center",
               boxSizing: "border-box",
             }}
+            className="dailyphoto"
           />
         </div>
-        <div style={{ width: "400px" }}>
+        <div className="description" style={{ width: "400px" }}>
           <h3>{photoData.title}</h3>
           <p>{photoData.explanation}</p>
         </div>

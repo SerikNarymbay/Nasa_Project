@@ -42,13 +42,19 @@ export function NasaVideo() {
           variant="outlined"
           focused
           color="primary"
-          sx={{ m: 1, width: "55ch", input: { color: "white" } }}
+          sx={{ m: 1, maxWidth: "100%", input: { color: "white" } }}
           value={search}
           onChange={handleSearch}
         />
       </form>
       <Container>
-        <Grid container rowSpacing={10} columnSpacing={{ xc: 1, sm: 2, md: 3 }}>
+        <Grid
+          container
+          rowSpacing={10}
+          columnSpacing={{ xc: 1, sm: 2, md: 3 }}
+          align="center"
+          justify="center"
+        >
           {video.map((item) => (
             <Grid item xs={12} sm={4} md={3} key={item.href}>
               <div

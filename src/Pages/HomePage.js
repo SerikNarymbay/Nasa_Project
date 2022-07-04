@@ -51,7 +51,7 @@ export function HomePage() {
           color="primary"
           sx={{
             m: 1,
-            width: "55ch",
+            maxWidth: "100%",
             input: { color: "white" },
           }}
           value={search}
@@ -59,7 +59,13 @@ export function HomePage() {
         />
       </form>
       <Container>
-        <Grid container rowSpacing={10} columnSpacing={{ xc: 1, sm: 2, md: 3 }}>
+        <Grid
+          container
+          rowSpacing={10}
+          columnSpacing={{ xc: 1, sm: 2, md: 3 }}
+          align="center"
+          justify="center"
+        >
           {image.map((item) => (
             <Grid item xs={12} sm={6} md={3}>
               <div
