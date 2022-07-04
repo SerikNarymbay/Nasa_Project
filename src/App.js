@@ -10,7 +10,7 @@ import backGround from "./backgroundVideo/Earth_Background.mp4";
 function App() {
   return (
     <div className="App">
-      <video className="video_background" src={backGround} autoPlay loop />
+      <video className="video_background" src={backGround} autoPlay loop/>
       <BrowserRouter>
         <Header />
         <Routes>

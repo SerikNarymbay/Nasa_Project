@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import { Container } from "@mui/material";
 
 const style = {
   position: "absolute",
@@ -33,10 +34,15 @@ export default function NasaPhoto() {
   if (!photoData) return <div />;
 
   return (
-    <div>
+    <Container>
       <div>
         <Button
-          style={{ marginLeft: "150px",marginTop:'40px', color: "white", backgroundColor: "blue" }}
+          style={{
+            marginLeft: "150px",
+            marginTop: "40px",
+            color: "white",
+            backgroundColor: "blue",
+          }}
           onClick={handleOpen}
         >
           Info about
@@ -65,6 +71,7 @@ export default function NasaPhoto() {
           margin: "40px",
           color: "white",
         }}
+        className="block"
       >
         <div>
           <h3>{photoData.date}</h3>
@@ -84,6 +91,6 @@ export default function NasaPhoto() {
           <p>{photoData.explanation}</p>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }
